@@ -1,13 +1,15 @@
-#include "splines.h"
-
 #include <armadillo>
 #include <iostream>
 
-Splines::Splines(int deg, int len) {
+#include "splines.h"
+
+BSplines::BSplines(int deg, int len) {
+  std::cout << "hi.";
+
   degree = deg;
   length = len;
 }
 
-const void Splines::deBoor() {}
+const void BSplines::deBoor() {}
 
-Splines::~Splines() { std::cout << "bye."; }
+BSplines::~BSplines() { std::cout << "bye."; }

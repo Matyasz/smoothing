@@ -1,19 +1,16 @@
-#ifndef SPLINES_H
-#define SPLINES_H
+#pragma once
 
 #include <armadillo>
 
-class Splines {
+class BSplines {
 public:
-  Splines(int degree, int length);
-  ~Splines();
+  BSplines(int degree, int length);
+  ~BSplines();
 
   int degree;
   int length;
-  arma::mat splineMat;
+  arma::mat splines;
 
 private:
   void const deBoor();
 };
-
-#endif
